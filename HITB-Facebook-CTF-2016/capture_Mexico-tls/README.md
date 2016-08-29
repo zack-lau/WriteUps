@@ -15,7 +15,10 @@ The steps in solving this question is simple as the required tools have been wri
 <li type="1">Run <b>ls -la</b> to make sure there are outputs in the directory.</li>
 <li type="1">Go download the awesome tool written by Marco from <a href="http://www.segfault.it/tools/tools-latest.zip">here</a> and compile "piciolla".</li>
 <li type="1">Compile "piciolla" and place the executable in the same directory of "piciolla.sh"</li>
-<li type="1">Execute "piciolla.sh" with splited PCAP files folder path as parameter:<b>./piciolla.sh <i>&lt;Folder of splited PCAP files&gt;</i></b></li>
+<li type="1">Execute "piciolla.sh" with splited PCAP files folder path as parameter:<br><b>./piciolla.sh <i>&lt;Folder of splited PCAP files&gt;</i></b></li>
+<li type="1">"piciolla" will start to analyse the packets.</li>
+<li type="1">Results are placed in the <b>"results"</b></li>
+<li type="1">Finally, use the private key in the <b>"results"</b> folder to decrypt the traffics in your favorite tools</li>
 
 </ol>
 <br><br>
