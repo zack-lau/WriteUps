@@ -8,7 +8,9 @@ The goal for this question is to decrypt the TLS encrypted contents in the PCAP 
 Since I only have access to the PCAP, I used the information from the passive approach discribed in Marco's white paper to determine whether there is a faulty signature to allow further actions to be done in attempt to obtain the private key.<br><br>
 <b>Solution</b>
 <ul>
-<ol>Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.</ol>
+<ol>
+<li>Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.</li>
+</ol>
 </ul>
 <br><br>
 <b>References</b><br>
