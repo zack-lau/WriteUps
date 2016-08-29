@@ -1,7 +1,7 @@
 <b>Question:</b> Can you break TLS? [200PTS]<br>
 <b>Note:</b> Flag doesn't start with flag{}<br>
 <b>Category:</b> Crypto<br>
-<a href="https://github.com/zack-lau/WriteUps/blob/master/HITB-Facebook-CTF-2016/capture_Mexico-tls/tls_16970cb3b09a9dd01f5b82449d9c1795.tar.gz">tls_16970cb3b09a9dd01f5b82449d9c1795.tar.gz</a> (original file is included in this folder)
+<b>File:</b> <a href="https://github.com/zack-lau/WriteUps/blob/master/HITB-Facebook-CTF-2016/capture_Mexico-tls/tls_16970cb3b09a9dd01f5b82449d9c1795.tar.gz">tls_16970cb3b09a9dd01f5b82449d9c1795.tar.gz</a>
 
 <b>Introduction</b><br>
 The goal of this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here are his <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf">presentation</a> and <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf">white paper</a>.<br><br>
