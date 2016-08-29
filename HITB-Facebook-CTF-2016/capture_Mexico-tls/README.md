@@ -11,9 +11,9 @@ The steps in solving this question is simple as the required tools have been wri
 <ol>
 <li type="1">Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.</li>
 <li type="1">Check whether all prerequisites are fulfilled for the attack.</li>
-<li type="1">Split up the PCAP file using tcpflow by running:<br><b>tcpflow -r <i>&lt;PCAP file&gt;</i></li>
+<li type="1">Split up the PCAP file using tcpflow by running:<br><b>tcpflow -r <i>&lt;PCAP file&gt;</i></b></li>
 <li type="1">The run <b>ls -la</b> to make sure there are outputs in the directory.</li>
-<li type="1">Go download the awesome tool written by Marco from <a href="http://www.segfault.it/tools/tools-latest.zip">here</a>and compile "piciolla".</li>
+<li type="1">Go download the awesome tool written by Marco from <a href="http://www.segfault.it/tools/tools-latest.zip">here</a> and compile "piciolla".</li>
 <li type="1">Check whether all prerequisites are fulfilled for the attack.</li>
 
 </ol>
