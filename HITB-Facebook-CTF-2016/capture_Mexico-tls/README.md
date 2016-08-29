@@ -20,10 +20,9 @@ The steps in solving this question is simple as the required tools have been wri
 <li type="1">Results are placed in the <b>"results"</b>.</li>
 <li type="1">Finally, use the private key in the <b>"results"</b> folder to decrypt the traffics in your favorite tools!</li>
 </ol>
-<br>
 <b>References</b><br>
 <a href="https://access.redhat.com/blogs/766093/posts/1976703"><i>Factoring RSA Keys With TLS Perfect Forward Secrecy</i>, Red Hat, 2015</a><br>
 <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf"><i>Recover a RSA private key from a TLS session with Perfect Forward Secrecy (Presentation)</i>, Marco Ortisi, 2016</a><br>
 <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf"><i>Recover a RSA private key from a TLS session with Perfect Forward Secrecy (White Paper)</i>, Marco Ortisi, 2016</a><br>
 
-Email:<a href="mailto:zack@zack.idv.hk">zack@zack.idv.hk</a>
+Email: <a href="mailto:zack@zack.idv.hk">zack@zack.idv.hk</a>
