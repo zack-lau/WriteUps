@@ -6,9 +6,9 @@ Category: Crypto<br>
 <b>Introduction</b><br>
 The goal for this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here are his <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf">presentation</a> and <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf">white paper</a>.<br><br>
 As discribed in Marco's white paper, there are 3 criterias need to meet in order for an attacker to calculate private key from captured network packets and they are:<br>
-<b>bull;</b>
-<b>bull;</b>
-<b>bull;</b>
+<li>Test</li>
+<li>Test</li>
+<li>Test</li>
 
 <b>Solution</b><br>
 1) Review and analyse the protocols in the PCAP file.
