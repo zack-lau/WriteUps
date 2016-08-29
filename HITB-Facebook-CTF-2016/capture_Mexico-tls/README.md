@@ -6,9 +6,9 @@ Category: Crypto<br>
 <b>Introduction</b><br>
 The goal for this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here are his <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf">presentation</a> and <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf">white paper</a>.<br><br>
 Since I only have access to the PCAP, I used the information from the passive approach discribed in Marco's white paper to determine whether there is a faulty signature to allow further actions to be done in attempt to obtain the private key.<br><br>
-<b>Solution</b><br>
+<b>Solution</b>
 <ul>
-<li>Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.<br>
+<li>Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.</li>
 </ul>
 <br><br>
 <b>References</b><br>
