@@ -6,13 +6,15 @@ Category: Crypto<br>
 <b>Introduction</b><br>
 The goal for this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here are his <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf">presentation</a> and <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf">white paper</a>.<br><br>
 Since I only have access to the PCAP, I used the information from the passive approach discribed in Marco's white paper to determine whether there is a faulty signature to allow further actions to be done in attempt to obtain the private key.<br><br>
-The steps in solving this question is simple as the required tools have been written by Marco. However, IMHO, it is important to understand why this attack works in this scenario and how it works. Therefore, I strongly recommend all readers of this write up spare some time to read the white paper produced by Marco. This attack works on products that are using RSA-CRT, but the fix is simple - disabling RSA-CRT<br><br>
+The steps in solving this question is simple as the required tools have been written by Marco. However, IMHO, it is important to understand why this attack works in this scenario and how it works. Therefore, I strongly recommend all readers of this write up spare some time to read the white paper produced by Marco. This attack works on products that are using RSA-CRT, but the fix is simple......disabling RSA-CRT<br><br>
 <b>Solution</b>
 <ol>
 <li type="1">Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.</li>
 <li type="1">Check whether all prerequisites are fulfilled for the attack.</li>
-<li type="1">Split up the PCAP file using tcpflow by running:<br><b>tcpflow -r <i>&lt;PCAP file&gt;</i>
-</li>
+<li type="1">Split up the PCAP file using tcpflow by running:<br><b>tcpflow -r <i>&lt;PCAP file&gt;</i></li>
+<li type="1">The run <b>ls -la</b> to make sure there are outputs in the directory.</li>
+<li type="1">Go download the awesome tool written by Marco from <a href="http://www.segfault.it/tools/tools-latest.zip">here</a>and compile "piciolla".</li>
+<li type="1">Check whether all prerequisites are fulfilled for the attack.</li>
 
 </ol>
 <br><br>
