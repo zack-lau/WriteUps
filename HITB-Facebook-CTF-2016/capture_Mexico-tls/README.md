@@ -5,16 +5,14 @@ Category: Crypto<br>
 
 <b>Introduction</b><br>
 The goal for this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here are his <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf">presentation</a> and <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf">white paper</a>.<br><br>
-As discribed in Marco's white paper, there are 3 criterias need to meet in order for an attacker to calculate private key from captured network packets and they are:<br>
-<li>Test</li>
-<li>Test</li>
-<li>Test</li>
+
+Since I only have access to the PCAP, I used the information from the passive approach discribed in Marco's white paper to determine whether there is a faulty signature to allow further actions to be done in attempt to obtain the private key.<br><br>
 
 <b>Solution</b><br>
-1) Review and analyse the protocols in the PCAP file.
-
-
-
+<ul>
+<li>Review and analyse the protocols in the PCAP file and it's TLS 1.2 in this PCAP file.<br>
+</ul>
+<br><br>
 <b>References</b><br>
 <a href="https://access.redhat.com/blogs/766093/posts/1976703"><i>Factoring RSA Keys With TLS Perfect Forward Secrecy</i>, Red Hat, 2015</a><br>
 <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf"><i>Recover a RSA private key from a TLS session with Perfect Forward Secrecy (Presentation)</i>, Marco Ortisi, 2016</a><br>
