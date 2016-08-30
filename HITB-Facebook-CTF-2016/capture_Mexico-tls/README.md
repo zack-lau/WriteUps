@@ -4,7 +4,7 @@
 <b>File:</b> <a href="https://github.com/zack-lau/WriteUps/blob/master/HITB-Facebook-CTF-2016/capture_Mexico-tls/tls_16970cb3b09a9dd01f5b82449d9c1795.tar.gz">tls_16970cb3b09a9dd01f5b82449d9c1795.tar.gz</a>
 
 <b>Introduction</b><br>
-The goal of this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here are his <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf">presentation</a> and <a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf">white paper</a>.<br><br>
+The goal of this question is to decrypt the TLS encrypted contents in the PCAP file (of course). The detailed techinical document for the techniques/tools used for answering the question are authored by <b>Marco Ortisi</b> (thank you very much indeed!) and here is his <a href="http://www.segfault.it/tools/Blackhat2016US-wp.pdf">white paper</a>.<br><br>
 Since I only have access to the PCAP, I used the information from the passive approach discribed in Marco's white paper to determine whether there is a faulty signature to allow further actions to be done in attempt to obtain the private key.<br><br>
 The steps in solving this question is simple as the required tools have been written by Marco. IMHO, it is important to understand why this attack works in this scenario and how it works. Therefore, I strongly recommend all readers of this write up spare some time to read the white paper produced by Marco. This attack works on products that are using RSA-CRT, but the fix is simple......disabling RSA-CRT!!!<br><br>
 <b>Solution</b>
@@ -22,8 +22,7 @@ The steps in solving this question is simple as the required tools have been wri
 </ol>
 <b>References</b><br>
 <a href="https://access.redhat.com/blogs/766093/posts/1976703"><i>Factoring RSA Keys With TLS Perfect Forward Secrecy</i>, Red Hat, 2015</a><br>
-<a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy.pdf"><i>Recover a RSA private key from a TLS session with Perfect Forward Secrecy (Presentation)</i>, Marco Ortisi, 2016</a><br>
-<a href="https://www.blackhat.com/docs/us-16/materials/us-16-Ortisi-Recover-A-RSA-Private-Key-From-A-TLS-Session-With-Perfect-Forward-Secrecy-wp.pdf"><i>Recover a RSA private key from a TLS session with Perfect Forward Secrecy (White Paper)</i>, Marco Ortisi, 2016</a><br>
+<a href="http://www.segfault.it/tools/Blackhat2016US-wp.pdf"><i>Recover a RSA private key from a TLS session with Perfect Forward Secrecy (White Paper)</i>, Marco Ortisi, 2016</a><br>
 
 Please let me know if you have any questions.<br>
 Email: <a href="mailto:zack@zack.idv.hk">zack@zack.idv.hk</a>
